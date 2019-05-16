@@ -20,6 +20,7 @@ chmod +x master_init.sh
 ```
 
 reboot then,
+
 `./master_init.sh`
 
 
@@ -28,6 +29,7 @@ or, with single command...
 `curl -sL https://raw.githubusercontent.com/jasonlee925/rpi-k8s-node-prep/master/prep.sh | sudo bash`
 
 reboot then,
+
 `curl -sL https://raw.githubusercontent.com/jasonlee925/rpi-k8s-node-prep/master/master_init.sh | sudo bash`
 
 This script:  
