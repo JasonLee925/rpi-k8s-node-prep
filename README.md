@@ -12,13 +12,13 @@ To prepare a node with the script, on each node run the following command:
 
 The safe way...
 ```
-wget https://raw.githubusercontent.com/aaronkjones/rpi-k8s-node-prep/master/prep.sh
+wget https://raw.githubusercontent.com/jasonlee925/rpi-k8s-node-prep/master/prep.sh
 chmod +x prep.sh
 ./prep.sh
 ```
 or, with single command...
 
-`curl -sL https://raw.githubusercontent.com/aaronkjones/rpi-k8s-node-prep/master/prep.sh | sudo bash`
+`curl -sL https://raw.githubusercontent.com/jasonlee925/rpi-k8s-node-prep/master/prep.sh | sudo bash`
 
 This script:  
 * Installs Docker
