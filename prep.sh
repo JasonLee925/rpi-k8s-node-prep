@@ -113,11 +113,7 @@ main() {
 	if [[ "$node_type" == "master" ]]; then
 		echo "Removing \"KUBELET_NETWORK_ARGS\" from 10-kubeadm.conf"
 		sudo sed -i '/KUBELET_NETWORK_ARGS=/d' /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
-		echo "Please reboot"
-		exit 0
 	elif [[ "$node_type" == "slave" ]]; then
-		echo "Please reboot."
-		exit 0
 	fi
 	
 	
@@ -130,6 +126,6 @@ main() {
 	kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 	
 	echo "Please reboot."
-	
+	exit 0
 }
 main
