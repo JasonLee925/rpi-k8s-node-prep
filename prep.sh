@@ -113,7 +113,6 @@ main() {
 	if [[ "$node_type" == "master" ]]; then
 		echo "Removing \"KUBELET_NETWORK_ARGS\" from 10-kubeadm.conf"
 		sudo sed -i '/KUBELET_NETWORK_ARGS=/d' /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
-	elif [[ "$node_type" == "slave" ]]; then
 	fi
 	
 	
